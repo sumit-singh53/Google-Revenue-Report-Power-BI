@@ -23,6 +23,19 @@ The **Google Revenue Analysis** Power BI project aims to visualize and analyze G
 
 ---
 
+## 🏫 About This Project
+
+This repository represents a **project-based learning initiative for college**, designed to strengthen practical skills in business intelligence, data modeling, and data-driven storytelling. The work focuses on applying academic concepts in a real-world analytics context using Power BI and structured financial data.
+
+The project was developed collaboratively and reflects a strong emphasis on professional documentation, reproducibility, and clear analytical communication.
+
+### Team
+
+- **Sumit Singh**
+- **Rohit Kumar**
+
+---
+
 ## 🎯 Objectives
 
 - 🗓️ Track Google’s revenue from **2014 to 2024**
