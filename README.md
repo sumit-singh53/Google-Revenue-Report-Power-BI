@@ -60,7 +60,10 @@ Google-Revenue-Analysis/
 ├── GOOGLE REVENUE ANALYSIS-2014 to 2024.pbix   # Power BI report file
 ├── Google Revenue From 2014 to 2024.xlsx        # Source dataset (Excel)
 ├── revenue.png                                  # Dashboard banner image
+├── social-preview.png                           # GitHub social preview image
 ├── Bis Final Doc.docx                           # Supporting project documentation
+├── LICENSE                                      # MIT license
+├── CONTRIBUTING.md                              # Contribution guidelines
 └── README.md                                    # Project documentation
 ```
 
@@ -167,4 +170,26 @@ One row per year.
 **Sumit Singh**
 
 If you found this project useful, feel free to ⭐ the repository.
+
+---
+
+## 🤝 Contributing
+
+Contributions are welcome. Please read `CONTRIBUTING.md` for setup, data rules, and PR expectations.
+
+---
+
+## 📄 License
+
+This project is licensed under the **MIT License**. See `LICENSE` for details.
+
+---
+
+## 🌐 GitHub Social Preview
+
+Use `social-preview.png` as the repository social preview image:
+
+1. Open your repository on GitHub.
+2. Go to **Settings** → **General** → **Social preview**.
+3. Upload `social-preview.png`.
 
