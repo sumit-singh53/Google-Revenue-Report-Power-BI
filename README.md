@@ -55,3 +55,116 @@ The **Google Revenue Analysis** Power BI project aims to visualize and analyze G
 
 ## 🗂️ File Structure
 
+```text
+Google-Revenue-Analysis/
+├── GOOGLE REVENUE ANALYSIS-2014 to 2024.pbix   # Power BI report file
+├── Google Revenue From 2014 to 2024.xlsx        # Source dataset (Excel)
+├── revenue.png                                  # Dashboard banner image
+├── Bis Final Doc.docx                           # Supporting project documentation
+└── README.md                                    # Project documentation
+```
+
+---
+
+## 🧾 Dataset Details
+
+### Dataset Name
+
+`Google Revenue From 2014 to 2024.xlsx`
+
+### Grain
+
+One row per year.
+
+### Time Range
+
+2014 to 2024 (11 records).
+
+### Data Dictionary
+
+| Column | Type | Unit | Description |
+|---|---|---|---|
+| Year | Whole Number | Year | Fiscal calendar year |
+| Total Revenue (in billions USD) | Decimal Number | USD (Billions) | Alphabet/Google total annual revenue |
+| Advertising Revenue | Decimal Number / Text | USD (Billions) | Revenue from advertising business |
+| Google Cloud Revenue | Decimal Number / Text | USD (Billions) | Revenue attributed to Google Cloud |
+| Other Revenue | Decimal Number / Text | USD (Billions) | Other non-core revenue streams |
+| YouTube Ads | Decimal Number / Text | USD (Billions) | YouTube advertising revenue |
+| Google Network | Decimal Number / Text | USD (Billions) | Google Network revenue |
+| Subscriptions, Platforms & Devices | Decimal Number / Text | USD (Billions) | Revenue from subscriptions/platform/device businesses |
+
+> **Note:** `DNS` appears in early years for some columns and means **Data Not Specified**.
+
+---
+
+## 🔁 How to Replicate the Dataset in Power BI
+
+1. Open Power BI Desktop.
+2. Load `Google Revenue From 2014 to 2024.xlsx`.
+3. In Power Query:
+  - Replace `DNS` with `null` (or keep as text if needed for display-only use).
+  - Set numeric data types to **Decimal Number**.
+  - Keep `Year` as **Whole Number**.
+4. Close & Apply.
+5. Build visuals using yearly trend comparisons across revenue streams.
+
+---
+
+## 🧠 Suggested DAX Metrics
+
+- **Total Revenue** = `SUM([Total Revenue (in billions USD)])`
+- **YoY Growth %** = `DIVIDE([Total Revenue] - [Previous Year Revenue], [Previous Year Revenue])`
+- **Cloud Share %** = `DIVIDE(SUM([Google Cloud Revenue]), [Total Revenue])`
+- **Ad Share %** = `DIVIDE(SUM([Advertising Revenue]), [Total Revenue])`
+
+---
+
+## ✅ Key Output Insights (From Current Data)
+
+- Revenue grows from **66.00B (2014)** to **350.02B (2024)**.
+- Advertising remains the largest contributor over the period.
+- Cloud contribution becomes materially larger from 2020 onward.
+- Subscriptions/Platforms/Devices and YouTube Ads show strong late-period growth.
+
+---
+
+## 📸 Output
+
+- Power BI report: `GOOGLE REVENUE ANALYSIS-2014 to 2024.pbix`
+- Source data: `Google Revenue From 2014 to 2024.xlsx`
+- Banner/preview image: `revenue.png`
+
+---
+
+## 🚀 How to Use This Project
+
+1. Clone/download the repository.
+2. Open the `.pbix` file in Power BI Desktop.
+3. Refresh data if needed (Excel source should remain in the same relative location).
+4. Use slicers and filters to explore year-wise and segment-wise trends.
+
+---
+
+## ⚠️ Limitations
+
+- Some segment values for early years are marked `DNS`.
+- Dataset is annual (not quarterly/monthly), so short-term seasonality is not modeled.
+- Accuracy depends on source financial disclosures and manual preparation.
+
+---
+
+## 📌 Future Improvements
+
+- Add source links for each metric (annual reports / investor relations).
+- Add quarterly-level data for deeper trend analysis.
+- Build forecast scenarios in Power BI using decomposition and confidence bands.
+- Publish report to Power BI Service for web sharing.
+
+---
+
+## 👤 Author
+
+**Sumit Singh**
+
+If you found this project useful, feel free to ⭐ the repository.
+
